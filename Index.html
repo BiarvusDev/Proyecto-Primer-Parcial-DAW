@@ -3,7 +3,430 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Proyecto Primer Parcial DAW</title>
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="/CSS/Estilos.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!--Barra de Navegacion Vertical-->
+    <aside class="barraVertical">
+      <div class="barraVertical-logo">
+        <h2>
+          <img src="/Imagenes/Logo.png" class="logoIcono" /><span
+            class="logoTexto"
+            >Gamepedia</span
+          >
+        </h2>
+      </div>
+
+      <!--Contenido de la barra de navegacion-->
+      <nav class="barraVertical-nav">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="/Iconos/search.svg" /><span class="label"
+                >Buscar</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/Index.html"
+              ><img src="/Iconos/home.svg" /><span class="label"
+                >Inicio</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/Jerarquia/Reviews.html"
+              ><img src="/Iconos/review.svg" /><span class="label"
+                >Reseñas</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/Jerarquia/Noticias.html"
+              ><img src="/Iconos/news.svg" /><span class="label"
+                >Noticias</span
+              ></a
+            >
+          </li>
+          <li>
+            <a href="/Jerarquia/Preferencias.html"
+              ><img src="/Iconos/more.svg" /><span class="label">Mas</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!--Boton de cambiar modo oscuro / claro-->
+      <div class="barraVertical-footer">
+        <button class="btnTema" aria-label="Cambiar Tema">
+          <img src="/Iconos/oscuro.svg" />
+        </button>
+
+        <!--Minimizar la barra de navegacion-->
+        <button
+          class="btnMinimizar"
+          aria-label="Minimizar Barra"
+          aria-expanded="true"
+        >
+          <img src="/Iconos/minimizar.svg" />
+        </button>
+
+        <!--Boton de iniciar sesion-->
+
+        <button class="btnSesion">
+          <span class="text-completo">Registar o Iniciar Sesión</span
+          ><span class="text-mini"><img src="Iconos/usuario.svg" /></span>
+        </button>
+      </div>
+    </aside>
+
+    <!--Contenido Principal de la Pagina-->
+    <main class="contenidoPrincipal">
+      <!--Juego destacado en la parte superior de la pagina-->
+      <section class="destacada">
+        <div class="destacadaCubrir"></div>
+        <div class="destacadaInfo">
+          <h1>Mejor Juego del Año 2025</h1>
+          <h2>Clair Obscure: Expedition 33</h2>
+          <p>
+            Clair Obscur: Expedición 33 es un videojuego de rol de 2025
+            desarrollado por el estudio francés Sandfall Interactive y publicado
+            por Kepler Interactive. Ambientado en un entorno de fantasía oscura
+            de la Belle Époque, el juego sigue a los voluntarios de la
+            Expedición 33 en su misión de destruir a la Pintora, un ser que
+            causa el Gommage anual, que elimina a aquellos con una edad cada vez
+            menor o superior.
+          </p>
+          <div class="destacadaBotones">
+            <a
+              href="https://www.youtube.com/watch?v=2VaLOc1FpSo"
+              class="btnTrailer"
+              >Trailer</a
+            >
+            <a
+              href="https://thegameawards.com/nominees/game-of-the-year"
+              class="btnVerMas"
+              >Ver Mas</a
+            >
+          </div>
+        </div>
+        <img src="/Imagenes/Expedition33.jpg" class="destacada-img" />
+      </section>
+
+      <!--Lista de Juegos Separados por Categoria-->
+      <!--Categoria: Mayor Puntaje-->
+      <section class="categorias">
+        <h2 class="categorias-titulo">Juegos con Puntaje mas Alto</h2>
+        <div class="filas">
+          <article class="portadas">
+            <a href="/EldenRing.html">
+              <img src="/Imagenes/EldenRing.jpg" alt="Elden Ring" />
+              <h3>Elden Ring</h3>
+              <span class="puntaje puntajeVerde">99</span>
+            </a>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/E33.png" alt="Expedition 33" />
+            <h3>Clair Obscure: Expedition 33</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/MGS.jpg" alt="Metal Gear Soild" />
+            <h3>Metal Gear Soild</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Zelda BOTW.jpg" alt="Zelda BOTW" />
+            <h3>The Legend of Zelda: Breath of the Wild</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Zelda OT.jpg" alt="Zelda OT" />
+            <h3>The Legend of Zelda: Ocarina of Time</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/TLOU.jpg" alt="The Last of Us 1" />
+            <h3>The Last of Us</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Witcher 3.jpg" alt="Witcher 3" />
+            <h3>The Witcher 3: Wild Hunt</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/BG3.jpg" alt="Baldur's Gate 3" />
+            <h3>Baldur's Gate 3</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Portal 2.jpg" alt="Portal 2" />
+            <h3>Portal 2</h3>
+            <span class="puntaje puntajeVerde">99</span>
+          </article>
+        </div>
+      </section>
+
+      <!--Categoria: Tendencia-->
+      <section class="categorias">
+        <h2 class="categorias-titulo">Juegos en Tendencia</h2>
+        <div class="filas">
+          <article class="portadas">
+            <img src="/Imagenes/Hades2.jpeg" alt="Hades 2" />
+            <h3>Hades II</h3>
+            <span class="puntaje puntajeVerde">90</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/E33.png" alt="Expedition 33" />
+            <h3>Clair Obscure: Expedition 33</h3>
+            <span class="puntaje puntajeVerde">97</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Megabonk.jpg" alt="Megabonk" />
+            <h3>Megabonk</h3>
+            <span class="puntaje puntajeVerde">85</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Silksong.jpg" alt="Silksong" />
+            <h3>Hollow Knight: Silksong</h3>
+            <span class="puntaje puntajeVerde">94</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/DS2.jpg" alt="Death Stranding 2" />
+            <h3>Death Stranding 2: On The Beach</h3>
+            <span class="puntaje puntajeVerde">89</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/GOY.jpg" alt="Ghost of Yotei" />
+            <h3>Ghost of Yotei</h3>
+            <span class="puntaje puntajeVerde">88</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Dispatch.jpg" alt="Dispatch" />
+            <h3>Dispatch</h3>
+            <span class="puntaje puntajeVerde">87</span>
+          </article>
+        </div>
+      </section>
+
+      <!--Categoria: Singleplayer-->
+      <section class="categorias">
+        <h2 class="categorias-titulo">Juegos Singleplayer / Campañas</h2>
+        <div class="filas">
+          <article class="portadas">
+            <img src="/Imagenes/GTA IV.jpg" alt="Grand Theft Auto IV" />
+            <h3>Grand Theft Auto IV</h3>
+            <span class="puntaje puntajeVerde">94</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Skyrim.jpg" alt="Skyrim" />
+            <h3>Elder Scrolls V: Skyrim</h3>
+            <span class="puntaje puntajeVerde">95</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Cyberpunk 2077.jpg" alt="Cyberpunk 2077" />
+            <h3>Cyberpunk 2077</h3>
+            <span class="puntaje puntajeVerde">90</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Fallout NV.jpg" alt="Fallout NV" />
+            <h3>Fallout New Vegas</h3>
+            <span class="puntaje puntajeVerde">94</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Doom Eternal.jpeg" alt="Doom Eternal" />
+            <h3>Doom Eternal</h3>
+            <span class="puntaje puntajeVerde">90</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/BioShock.jpg" alt="BioShock" />
+            <h3>BioShock</h3>
+            <span class="puntaje puntajeVerde">93</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/GOWR.jpg" alt="GOWR" />
+            <h3>God of War Ragnarock</h3>
+            <span class="puntaje puntajeVerde">93</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/RDR2.jpg" alt="RDR2" />
+            <h3>Read Dead Redemption 2</h3>
+            <span class="puntaje puntajeVerde">93</span>
+          </article>
+        </div>
+      </section>
+
+      <!--Categoria: Multijugador-->
+      <section class="categorias">
+        <h2 class="categorias-titulo">Juegos Multi-jugadores</h2>
+        <div class="filas">
+          <article class="portadas">
+            <img src="/Imagenes/BF6.jpg" alt="Battlefield 6" />
+            <h3>Battlefield 6</h3>
+            <span class="puntaje puntajeCasiVerde">80</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/BO2.jpg" alt="BO2" />
+            <h3>Call of Duty: Black Ops II</h3>
+            <span class="puntaje puntajeVerde">97</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Smash Ultimate.jpg" alt="Smash Ultimate" />
+            <h3>Super Smash Bros. Ultimate</h3>
+            <span class="puntaje puntajeVerde">92</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Halo 3.jpg" alt="Halo 3" />
+            <h3>Halo 3</h3>
+            <span class="puntaje puntajeVerde">98</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Rocket League.png" alt="Rocket League" />
+            <h3>Rocket League</h3>
+            <span class="puntaje puntajeAmarillo">68</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Fortnite.jpg" alt="Fortnite" />
+            <h3>Fortnite</h3>
+            <span class="puntaje puntajeAmarillo">67</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Concord.png" alt="Concord" />
+            <h3>Concord</h3>
+            <span class="puntaje puntajeRojo">12</span>
+          </article>
+        </div>
+      </section>
+
+      <!--Categoria: Proximos Lanzamientos-->
+      <section class="categorias">
+        <h2 class="categorias-titulo">Proximos Lanzamientos</h2>
+        <div class="filas">
+          <article class="portadas">
+            <img src="/Imagenes/GTA VI.png" alt="GTA VI" />
+            <h3>GTA VI</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Witcher4.jpg" alt="GTA VI" />
+            <h3>GTA VI</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Halo CE2.png" alt="Halo CE Remake" />
+            <h3>Halo: Campaign Evolved</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/RE9.jpg" alt="RE Requiem" />
+            <h3>Resident Evil Requiem</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Metroid P4.png" alt="Metroid P4 Beyond" />
+            <h3>Metroid Prime 4 Beyond</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+
+          <article class="portadas">
+            <img src="/Imagenes/Wolverine.jpg" alt="Wolverine" />
+            <h3>Wolverine</h3>
+            <span class="puntaje proximo">TBA</span>
+          </article>
+        </div>
+      </section>
+
+      <!--Formulario de contacto-->
+      <section>
+        <hr class="divisor" />
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactanos</legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Nombre" />
+              </div>
+
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" />
+              </div>
+
+              <div class="campo">
+                <label>Telefono</label>
+                <input class="input-text" type="tel" />
+              </div>
+
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"> </textarea>
+              </div>
+            </div>
+            <div class="enviar">
+              <input class="boton" type="submit" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <!--Pie de Pagina-->
+      <section class="footer">
+        <footer>
+          <p>Todos los derechos reservados a Chris Molina</p>
+          <p>
+            Contacto:
+            <a href="nombre:correo@ejemplo.com">chris.molinaren@ug.edu.ec</a>
+          </p>
+        </footer>
+      </section>
+    </main>
+
+    <script src="/JavaScript/MenuColapsable.js"></script>
+    <script src="/JavaScript/CambiarTema.js"></script>
+    <script src="/JavaScript/FormularioValidacion.js"></script>
+  </body>
 </html>
