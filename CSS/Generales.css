@@ -1,0 +1,56 @@
+:root {
+  --fondoOscuro: #111418;
+  --fondoClaro: #1a1e23;
+
+  --fondoCarta: #1f2328;
+  --fondoHover: #292e35;
+  --fondoBotones: rgba(34, 108, 204, 0.788);
+
+  --textoBlanco: #ffffff;
+  --textGris: #d3ddd9;
+
+  --fondoFormulario: #1a1e23;
+
+  --anchoBarraExpandida: 300px;
+  --anchoBarraColapsada: 88px;
+  --transition: 0.3s ease;
+
+  font-family: "Poppins", system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILOS PARA MODO CLARO Y OSCURO*/
+body {
+  background: var(--fondoOscuro);
+  color: var(--textoBlanco);
+  display: flex;
+  transition: var(--transition);
+}
+
+body.tema-claro {
+  --fondoOscuro: #f3f3f3;
+  --fondoClaro: #ffffff;
+
+  --fondoCarta: #dadada;
+  --fondoHover: #d7d7d7;
+
+  --fondoFormulario: #cacaca;
+
+  --textoBlanco: #000000;
+  --textGris: #444444;
+}
+
+body.tema-claro .barraVertical-nav img {
+  filter: brightness(0) invert(0);
+}
+
+/* PIE DE PAGINA*/
+.footer {
+  margin-top: 100px;
+  text-align: center;
+}

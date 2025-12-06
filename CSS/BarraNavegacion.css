@@ -1,0 +1,136 @@
+/* BARRA DE NAVEGACION COMPLETA */
+.barraVertical {
+  background: var(--fondoClaro); /*Color del fondo de la barra*/
+  width: var(--anchoBarraExpandida); /*Tamaño de la barra*/
+  height: 100%; /*Altura de la barra*/
+  padding: 1.852vh 15px; /*Relleno de arriba y izquierda*/
+  display: flex; /*Flexibilidad en la barra*/
+  flex-direction: column; /*Direccion de la flexibilidad*/
+  position: fixed; /*Hace que la barra este estacionaria*/
+}
+
+.barraVertical-logo {
+  display: flex; /*Flexibilidad*/
+  justify-content: center; /*Centra el contenido dentro de la clase*/
+}
+
+.divisorBarra {
+  margin-top: 38px;
+}
+
+.logoIcono {
+  position: relative; /*Posicion del logo*/
+  top: 10px; /*Espacio de arriba del logo*/
+  width: 48px; /*Ancho del logo*/
+  height: 48px; /*Altura del logo*/
+  margin-right: 12px; /*Espacio entre la derecha del logo*/
+}
+
+.logoTexto {
+  color: var(--textoBlanco); /*Color del titulo (Gamepedia)*/
+  font-size: 26px; /*Tamaño del tiutlo*/
+  font-weight: bold; /*Titulo en negrita*/
+}
+
+.barraVertical-nav li {
+  margin: 2vw; /*Espacio entre el contenido de la lista*/
+  font-size: 20px; /*Tamaño de la letra de los tabs*/
+  margin-left: 0.15vw; /*Espacio entre la parte izquierda lista*/
+  list-style-type: none; /*Desaparecer los puntos de los tabs*/
+}
+
+.barraVertical-nav a {
+  color: var(--textGris); /*Color del texto de los tabs*/
+  padding: 1.67vh; /*Relleno entre el contenido de los tabs*/
+  border-radius: 8px; /*Ajuste de los borde redondos de los tabs*/
+  width: 100%; /*Tamaño horizontal de los tabs*/
+  min-height: 48px; /*Tamaño minimo de altura entre los tabs*/
+  display: flex; /*Flexibilidad*/
+  align-items: center; /*Centrar el contenido de los tabs*/
+  text-decoration: none; /*Quitar la linea del href*/
+}
+
+.barraVertical-nav a:hover {
+  background: var(--fondoHover); /*Cambiar el color del fondo al deslizar*/
+  color: var(--textoBlanco); /*Cambiar el color del texto al deslizar*/
+}
+
+.barraVertical-nav img {
+  margin-right: 12px; /*Espacio entre el icono y texto de la lista*/
+  filter: brightness(0) invert(1); /*Invertir color de los iconos para el modo claro*/
+}
+
+.barraVertical-footer {
+  display: grid; /*pie de pagina de la barra en forma grid*/
+  position: absolute; /*Posicion de la pie de pagina de la barra*/
+  bottom: 0; /*Que esa posicion sea todo abajo*/
+  margin-bottom: 16px; /*Espacio entre el borde final de la barra y el contenido (botones)*/
+  gap: 20px; /*Espacio entre el contenido (botones)*/
+}
+
+/* BARRA DE NAVEGACION COLAPSADA */
+.barraVertical.colapsada {
+  width: var(--anchoBarraColapsada); /*Ancho de la barra colapsada*/
+}
+
+.barraVertical.colapsada .logoTexto {
+  /*Esconder el titulo en la barra colapsada*/
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+.barraVertical.colapsada .barraVertical-logo {
+  margin-left: 85px; /*Espacio entre la inzquierda del logo*/
+}
+
+.barraVertical.colapsada .barraVertical-nav a {
+  margin-left: 8px; /*Aumenta el espacio izquierdo de la lista*/
+  justify-content: center; /*Centra en contenido en medio*/
+}
+
+.barraVertical.colapsada .barraVertical-nav img {
+  /*Dimensiones de los iconos*/
+  margin-left: 0;
+  margin-right: 0;
+  width: 1.5625vw;
+  height: 2.778vh;
+}
+
+.barraVertical.colapsada .barraVertical-nav .label {
+  /*Esconder el texto de los tabs*/
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  width: 0px;
+  height: 0px;
+}
+
+.barraVertical.colapsada .btnSesion .text-mini {
+  /*Hacer un mini boton sesion para la barra colapsada*/
+  display: inline;
+  text-align: center;
+}
+
+.barraVertical.colapsada .btnSesion .text-completo {
+  /*Escojer el boton sesion completa cuando esta puesto la barra colapsada*/
+  display: none;
+}
+
+.barraVertical,
+.barraVertical * {
+  /*Animacion de la barra completa a la colapsada*/
+  transition: var(--transition);
+}
+
+.barraVertical.colapsada ~ .contenidoPrincipal {
+  /*Espacio entre la barra colapsada y el contenido principal*/
+  margin-left: var(--anchoBarraColapsada);
+  width: calc(100% - var(--anchoBarraColapsada));
+}
+
+.barraVertical ~ .contenidoPrincipal {
+  /*Espacio entre la barra completa y el contenido principal*/
+  margin-left: var(--anchoBarraExpandida);
+  width: calc(100% - var(--anchoBarraExpandida));
+}

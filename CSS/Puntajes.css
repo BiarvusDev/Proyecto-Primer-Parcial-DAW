@@ -1,0 +1,28 @@
+/* ESTILO DE LOS PUNTAJES*/
+.puntaje {
+  color: white;
+  font-weight: bold;
+  padding: 0.4vh 0.5vw;
+  font-size: 0.7vw;
+  border-radius: 6px;
+}
+
+.puntajeVerde {
+  background: green;
+}
+
+.puntajeCasiVerde {
+  background: yellowgreen;
+}
+
+.puntajeAmarillo {
+  background: orange;
+}
+
+.puntajeRojo {
+  background: red;
+}
+
+.proximo {
+  background: gray;
+}

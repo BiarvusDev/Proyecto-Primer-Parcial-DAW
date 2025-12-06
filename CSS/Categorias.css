@@ -1,0 +1,59 @@
+/* CATEGORIAS DE JUEGOS */
+.categorias {
+  margin-bottom: 40px;
+}
+
+.categorias-titulo {
+  font-size: 1.25vw;
+  margin-bottom: 15px;
+  color: var(--textoBlanco);
+}
+
+.filas {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.filas::-webkit-scrollbar {
+  height: 10px;
+}
+
+.filas::-webkit-scrollbar-thumb {
+  background: var(--fondoCarta);
+  border-radius: 5px;
+}
+
+.portadas {
+  min-width: clamp(160px, 18vw, 325px);
+  background: var(--fondoCarta);
+  transition: var(--transition);
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.portadas a {
+  text-decoration: none;
+  color: white;
+}
+
+.portadas:hover {
+  background: var(--fondoHover);
+  transform: translateY(-5px);
+}
+
+.portadas img {
+  object-fit: cover;
+  float: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.portadas h3 {
+  font-size: 0.7vw;
+  margin-bottom: 8px;
+}
