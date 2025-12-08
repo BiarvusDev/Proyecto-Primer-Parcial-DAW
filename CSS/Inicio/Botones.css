@@ -135,12 +135,4 @@
 }
 
 @media (max-width: 480px) {
-  .destacadaBotones {
-    gap: 5px;
-  }
-
-  .destacadaBotones a {
-    padding: 2.5px 5.5px;
-    font-size: 4.2px;
-  }
 }
