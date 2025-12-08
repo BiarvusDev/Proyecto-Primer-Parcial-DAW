@@ -27,17 +27,3 @@ if (aside && btnMin) {
     localStorage.setItem(STORAGE_KEY, String(seVaAColapsar));
   });
 }
-
-const barra = document.querySelector(".barraVertical");
-const btnAbrirMenu = document.querySelector(".btnAbrirMenu");
-const btnMinimizar = document.querySelector(".btnMinimizar");
-
-// Open sidebar on mobile
-btnAbrirMenu.addEventListener("click", () => {
-  barra.classList.add("abierto");
-});
-
-// Close sidebar (existing minimize button)
-btnMinimizar.addEventListener("click", () => {
-  barra.classList.remove("abierto");
-});
