@@ -1,0 +1,135 @@
+/* BOTONES*/
+
+.btnIcono {
+  width: 28px;
+  height: 28px;
+}
+
+.btnMinimizar,
+.btnTema,
+.btnSesion {
+  /*Estilos generales para los botones de la barra*/
+  background: var(--fondoBotones);
+  transition: var(--transition);
+  cursor: pointer;
+  font-weight: bold;
+  border: 2px solid transparent;
+  width: 265px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.btnSesion {
+  /*Estilos especificos del boton iniciar sesion (completa y minimizada)*/
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+}
+
+.btnSesion .text-mini {
+  display: none;
+}
+
+.btnSesion .text-completo {
+  display: inline;
+  white-space: nowrap;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.btnMinimizar:hover,
+.btnTema:hover,
+.btnSesion:hover {
+  /*Cambio de color de los botones al deslizar*/
+  border-color: var(--Gris);
+  background-color: #226cccab;
+  border-style: solid;
+}
+
+.destacadaBotones {
+  display: flex;
+  gap: 20px;
+}
+
+.destacadaBotones a {
+  /*Estilo de los botones tailer y ver mas (E33)*/
+  transition: var(--transition);
+  color: white;
+  background: #ff4455;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 22px;
+  border-radius: 6px;
+}
+
+.destacadaBotones a:hover {
+  /*Animacion de los botones del trailer y ver mas (E33)*/
+  background: #ff1a24;
+  transform: translateY(-3px);
+}
+
+.enviar .boton {
+  background: var(--fondoBotones);
+  color: white;
+  border: 2px solid transparent;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.enviar .boton:hover {
+  border-color: var(--Gris);
+  background-color: #226cccab;
+  border-style: solid;
+  transition: var(--transition);
+}
+
+@media (min-width: 2290px) {
+  .btnIcono {
+    width: 38px;
+    height: 38px;
+  }
+
+  .btnSesion {
+    padding: 12px;
+    font-size: 18px;
+  }
+
+  .destacadaBotones {
+    gap: 28px;
+  }
+
+  .destacadaBotones a {
+    padding: 14px 28px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .btnTema,
+  .btnMinimizar,
+  .btnSesion {
+    width: 220px;
+  }
+
+  .btnIcono {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btnSesion {
+    padding: 5px;
+    font-size: 14px;
+    font-weight: unset;
+  }
+
+  .destacadaBotones {
+    gap: 14px;
+  }
+
+  .destacadaBotones a {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}

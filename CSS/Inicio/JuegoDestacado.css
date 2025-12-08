@@ -2,6 +2,7 @@
 .contenidoPrincipal {
   margin-left: var(--anchoBarraExpandida);
   width: calc(100% - var(--anchoBarraExpandida));
+  transition: var(--transition);
   padding: 50px;
 }
 
@@ -11,7 +12,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  height: 600px;
+  height: 650px;
   padding: 50px;
   border-radius: 18px;
   margin-bottom: 50px;
@@ -22,12 +23,12 @@
       to right,
       rgba(5, 7, 12, 0.85) 15%,
       rgba(5, 7, 12, 0.35) 35%,
-      transparent 40%
+      transparent 50%
     ),
     linear-gradient(
       to bottom,
-      transparent 0%,
-      rgba(5, 7, 12, 0.4) 85%,
+      transparent 50%,
+      rgba(5, 7, 12, 0.4) 90%,
       #05070c 100%
     );
   position: absolute;
@@ -38,7 +39,7 @@
 .destacadaInfo {
   animation: fadeIn 0.8s ease forwards;
   position: relative;
-  max-width: clamp(300px, 25vw, 800px);
+  width: 480px;
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
   z-index: 2;
 }
@@ -54,33 +55,33 @@
   }
 }
 
-.destacada h1 {
+.destacada h2 {
   /*Estilos del text "juego del año"*/
   color: white;
-  font-size: 1.46vw;
-  margin-bottom: 18px;
+  font-size: 28px;
+  margin-bottom: 28px;
   letter-spacing: 1px;
 }
 
-.destacada h2 {
+.destacada h3 {
   /*Estilos del text "expedition: 33"*/
   color: white;
   font-weight: bold;
-  font-size: 1.7vw;
+  font-size: 32px;
   margin-bottom: 12px;
   line-height: 1.1;
 }
 
 .destacada p {
   /*Estilos de la descripcion de expedition: 33*/
-  color: #b5b5b5;
+  color: #d3ddd9;
   text-align: justify;
-  font-size: 0.85vw;
+  font-size: 18px;
   margin-bottom: 50px;
-  line-height: 1.5;
+  line-height: 1.65;
 }
 
-.destacada-img {
+.destacada img {
   /*Estilo de imagen de Expedition 33*/
   position: absolute;
   object-fit: cover;
@@ -88,4 +89,54 @@
   width: 100%;
   height: 100%;
   inset: 0;
+}
+
+@media (min-width: 2290px) {
+  .destacada {
+    height: 800px;
+  }
+
+  .destacadaInfo {
+    width: 640px;
+  }
+
+  .destacada h2 {
+    font-size: 36px;
+  }
+
+  .destacada h3 {
+    font-size: 40px;
+  }
+
+  .destacada p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .contenidoPrincipal {
+    margin-left: 250px;
+    width: calc(100% - 250px);
+    padding: 35px;
+  }
+
+  .destacada {
+    height: 460px;
+  }
+
+  .destacadaInfo {
+    width: 340px;
+  }
+
+  .destacada h2 {
+    font-size: 20px;
+  }
+
+  .destacada h3 {
+    font-size: 22.75px;
+  }
+
+  .destacada p {
+    font-size: 13px;
+  }
 }

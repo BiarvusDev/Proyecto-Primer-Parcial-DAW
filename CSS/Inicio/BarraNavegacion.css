@@ -1,0 +1,187 @@
+/* BARRA DE NAVEGACION COMPLETA */
+
+.barraVertical {
+  background: var(--fondoClaro); /*Color del fondo de la barra*/
+  width: var(--anchoBarraExpandida); /*Tamaño de la barra*/
+  transition: var(--transition);
+  display: flex; /*Flexibilidad en la barra*/
+  flex-direction: column; /*Direccion de la flexibilidad*/
+  position: fixed; /*Hace que la barra este estacionaria*/
+  height: 100%; /*Altura de la barra*/
+  padding: 20px 15px; /*Relleno de arriba y izquierda*/
+}
+
+.barraVerticalLogo {
+  display: flex; /*Flexibilidad*/
+  justify-content: center; /*Centra el contenido dentro de la clase*/
+}
+
+.barraVerticalLogo img {
+  position: relative; /*Posicion del logo*/
+  top: 14px; /*Espacio de arriba del logo*/
+  width: 46px; /*Ancho del logo*/
+  height: 46px; /*Altura del logo*/
+  margin-right: 12px; /*Espacio entre la derecha del logo*/
+}
+
+.barraVerticalLogo h1 {
+  color: var(--Blanco); /*Color del titulo (Gamepedia)*/
+  font-weight: bold; /*Titulo en negrita*/
+  white-space: nowrap; /* Prohibe el titulo que vaya debajo del logo */
+  font-size: 26px; /*Tamaño del tiutlo*/
+}
+
+.barraVertical hr {
+  color: var(--Blanco);
+  margin-top: 24px;
+}
+
+.barraVerticalTabs img {
+  filter: brightness(0) invert(1); /*Invertir color de los iconos para el modo claro*/
+  margin-right: 12px; /*Espacio entre el icono y texto de la lista*/
+  width: 28px;
+  height: 28px;
+}
+
+.barraVerticalTabs li {
+  list-style-type: none; /*Desaparecer los puntos de los tabs*/
+  white-space: nowrap;
+  margin: 38px; /*Espacio entre el contenido de la lista*/
+  font-size: 18px; /*Tamaño de la letra de los tabs*/
+  margin-left: 3px; /*Espacio entre la parte izquierda lista*/
+}
+
+.barraVerticalTabs a {
+  color: var(--Blanco); /*Color del texto de los tabs*/
+  display: flex; /*Flexibilidad*/
+  align-items: center; /*Centrar el contenido de los tabs*/
+  text-decoration: none; /*Quitar la linea del href*/
+  padding: 16px; /*Relleno entre el contenido de los tabs*/
+  border-radius: 8px; /*Ajuste de los borde redondos de los tabs*/
+  width: 100%; /*Tamaño horizontal de los tabs*/
+}
+
+.barraVerticalTabs a:hover {
+  background: var(--fondoHover); /*Cambiar el color del fondo al deslizar*/
+  color: var(--Blanco); /*Cambiar el color del texto al deslizar*/
+}
+
+.barraVerticalFooter {
+  background-color: var(--fondoClaro);
+  position: absolute; /*Posicion de la pie de pagina de la barra*/
+  bottom: 0; /*Que esa posicion sea todo abajo*/
+  gap: 20px; /*Espacio entre el contenido (botones)*/
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* BARRA DE NAVEGACION COLAPSADA */
+.barraVertical.colapsada {
+  width: var(--anchoBarraColapsada); /*Ancho de la barra colapsada*/
+}
+
+.barraVertical.colapsada .barraVerticalLogo {
+  margin-left: 14px; /*Espacio entre la inzquierda del logo*/
+}
+
+.barraVertical.colapsada .barraVerticalLogo span {
+  display: none;
+}
+
+.barraVertical.colapsada .barraVerticalTabs a {
+  justify-content: center; /*Centra en contenido en medio*/
+  margin-left: 8px; /*Aumenta el espacio izquierdo de la lista*/
+}
+
+.barraVertical.colapsada .barraVerticalTabs img {
+  /*Dimensiones de los iconos*/
+  margin-left: 0;
+  margin-right: 0;
+  width: 28px;
+  height: 28px;
+}
+
+.barraVertical.colapsada .barraVerticalTabs span {
+  /*Esconder el texto de los tabs*/
+  display: none;
+}
+
+.barraVertical.colapsada button {
+  width: 60px;
+  padding: 1px;
+}
+
+.barraVertical.colapsada .btnSesion .text-mini {
+  /*Msotrar un logo para la barra colapsada*/
+  display: inline;
+  text-align: center;
+}
+
+.barraVertical.colapsada .btnSesion .text-completo {
+  /*Esconder el texto completo cuando el boton esta colapsada*/
+  display: none;
+}
+
+.barraVertical.colapsada ~ .contenidoPrincipal {
+  /*Espacio entre la barra colapsada y el contenido principal*/
+  margin-left: var(--anchoBarraColapsada);
+  width: calc(100% - var(--anchoBarraColapsada));
+}
+
+@media (min-width: 2290px) {
+  .barraVerticalLogo img {
+    top: 18px;
+    width: 54px;
+    height: 54px;
+  }
+
+  .barraVerticalLogo h1 {
+    font-size: 28px;
+  }
+
+  .barraVerticalTabs img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .barraVerticalTabs li {
+    font-size: 22px;
+    margin-bottom: 60px;
+  }
+
+  .barraVertical.colapsada .barraVerticalTabs img {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .barraVertical {
+    width: 250px;
+  }
+
+  .barraVerticalLogo img {
+    top: 10px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .barraVerticalLogo h1 {
+    font-size: 18.5px;
+  }
+
+  .barraVerticalTabs img {
+    width: 22px;
+    height: 22px;
+  }
+
+  .barraVerticalTabs li {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .barraVertical.colapsada .barraVerticalTabs img {
+    width: 22px;
+    height: 22px;
+  }
+}

@@ -8,11 +8,11 @@ const STORAGE_THEME = "gamepedia_tema";
 const temaGuardado = localStorage.getItem(STORAGE_THEME);
 
 if (temaGuardado === "claro") {
-  document.body.classList.add("tema-claro");
+  document.body.classList.add("temaClaro");
 }
 
 function actualizarIconoTema() {
-  const modoClaro = document.body.classList.contains("tema-claro");
+  const modoClaro = document.body.classList.contains("temaClaro");
 
   iconTema.src = modoClaro ? "/Iconos/claro.svg" : "/Iconos/oscuro.svg";
 }
@@ -20,7 +20,7 @@ function actualizarIconoTema() {
 actualizarIconoTema();
 
 btnTema.addEventListener("click", () => {
-  const modoClaroActivo = document.body.classList.toggle("tema-claro");
+  const modoClaroActivo = document.body.classList.toggle("temaClaro");
 
   localStorage.setItem(STORAGE_THEME, modoClaroActivo ? "claro" : "oscuro");
 

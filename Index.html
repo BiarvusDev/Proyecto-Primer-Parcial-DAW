@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto Primer Parcial DAW</title>
+    <title>Gamepedia</title>
 
     <!--Google Fonts-->
     <link
@@ -12,73 +12,58 @@
     />
 
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="/CSS/Generales.css" />
-    <link rel="stylesheet" href="/CSS/BarraNavegacion.css" />
-    <link rel="stylesheet" href="/CSS/Botones.css" />
-    <link rel="stylesheet" href="/CSS/JuegoDestacado.css" />
-    <link rel="stylesheet" href="/CSS/Categorias.css" />
-    <link rel="stylesheet" href="/CSS/Puntajes.css" />
-    <link rel="stylesheet" href="/CSS/Formulario.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Generales.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/BarraNavegacion.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Botones.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/JuegoDestacado.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Categorias.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Puntajes.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Formulario.css" />
   </head>
 
   <body>
     <!--Barra de Navegacion Vertical-->
     <aside class="barraVertical">
-      <div class="barraVertical-logo">
-        <h2>
-          <img src="/Imagenes/Logo.png" class="logoIcono" /><span
-            class="logoTexto"
-            >Gamepedia</span
-          >
-        </h2>
+      <div class="barraVerticalLogo">
+        <h1><img src="/Imagenes/Logo.png" /><span>Gamepedia</span></h1>
       </div>
-      <hr class="divisorBarra" />
+      <hr />
 
       <!--Contenido de la barra de navegacion-->
-      <nav class="barraVertical-nav">
+      <nav class="barraVerticalTabs">
         <ul>
           <li>
-            <a href="#"
-              ><img src="/Iconos/search.svg" /><span class="label"
-                >Buscar</span
-              ></a
-            >
+            <a href="#"><img src="/Iconos/search.svg" /><span>Buscar</span></a>
           </li>
           <li>
             <a href="/Index.html"
-              ><img src="/Iconos/home.svg" /><span class="label"
-                >Inicio</span
-              ></a
+              ><img src="/Iconos/home.svg" /><span>Inicio</span></a
             >
           </li>
           <li>
-            <a href="/Jerarquia/Reviews.html"
-              ><img src="/Iconos/review.svg" /><span class="label"
-                >Reseñas</span
-              ></a
+            <a href="/Reseñas.html"
+              ><img src="/Iconos/review.svg" /><span>Reseñas</span></a
             >
           </li>
+
           <li>
-            <a href="/Jerarquia/Noticias.html"
-              ><img src="/Iconos/news.svg" /><span class="label"
-                >Noticias</span
-              ></a
+            <a href="/MiLista.html"
+              ><img src="/Iconos/checklist.svg" /><span>Mi Lista</span></a
             >
           </li>
+
           <li>
             <a href="/SobreMi.html"
-              ><img src="/Iconos/more.svg" /><span class="label"
-                >Sobre Mi</span
-              ></a
+              ><img src="/Iconos/more.svg" /><span>Sobre Mi</span></a
             >
           </li>
         </ul>
       </nav>
 
       <!--Boton de cambiar modo oscuro / claro-->
-      <div class="barraVertical-footer">
+      <div class="barraVerticalFooter">
         <button class="btnTema" aria-label="Cambiar Tema">
-          <img src="/Iconos/oscuro.svg" />
+          <img src="/Iconos/oscuro.svg" class="btnIcono" />
         </button>
 
         <!--Minimizar la barra de navegacion-->
@@ -87,14 +72,15 @@
           aria-label="Minimizar Barra"
           aria-expanded="true"
         >
-          <img src="/Iconos/minimizar.svg" />
+          <img src="/Iconos/minimizar.svg" class="btnIcono" />
         </button>
 
         <!--Boton de iniciar sesion-->
-
         <button class="btnSesion">
           <span class="text-completo">Registar o Iniciar Sesión</span
-          ><span class="text-mini"><img src="Iconos/usuario.svg" /></span>
+          ><span class="text-mini"
+            ><img src="Iconos/usuario.svg" class="btnIcono"
+          /></span>
         </button>
       </div>
     </aside>
@@ -105,8 +91,8 @@
       <section class="destacada">
         <div class="destacadaCubrir"></div>
         <div class="destacadaInfo">
-          <h1>Mejor Juego del Año 2025</h1>
-          <h2>Clair Obscure: Expedition 33</h2>
+          <h2>Mejor Juego del Año 2025</h1>
+          <h3>Clair Obscure: Expedition 33</h2>
           <p>
             Clair Obscur: Expedición 33 es un videojuego de rol de 2025
             desarrollado por el estudio francés Sandfall Interactive y publicado
@@ -129,13 +115,13 @@
             >
           </div>
         </div>
-        <img src="/Imagenes/Expedition33.jpg" class="destacada-img" />
+        <img src="/Imagenes/Expedition33.jpg" />
       </section>
 
       <!--Lista de Juegos Separados por Categoria-->
       <!--Categoria: Mayor Puntaje-->
       <section class="categorias">
-        <h2 class="categorias-titulo">Juegos con Puntaje mas Alto</h2>
+        <h2>Juegos con Puntaje mas Alto</h2>
         <div class="filas">
           <article class="portadas">
             <a href="/EldenRing.html">
@@ -392,7 +378,7 @@
         <hr class="divisorFormulario" />
         <form class="formulario">
           <fieldset>
-            <legend>Contactanos</legend>
+            <legend>Contactame</legend>
 
             <div class="contenedor-campos">
               <div class="campo">

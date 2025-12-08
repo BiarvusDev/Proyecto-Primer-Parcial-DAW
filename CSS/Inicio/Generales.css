@@ -4,10 +4,10 @@
 
   --fondoCarta: #1f2328;
   --fondoHover: #292e35;
-  --fondoBotones: rgba(34, 108, 204, 0.788);
+  --fondoBotones: #226ccc;
 
-  --textoBlanco: #ffffff;
-  --textGris: #d3ddd9;
+  --Blanco: #ffffff;
+  --Gris: #d3ddd9;
 
   --fondoFormulario: #1a1e23;
 
@@ -24,28 +24,27 @@
   box-sizing: border-box;
 }
 
-/* ESTILOS PARA MODO CLARO Y OSCURO*/
 body {
   background: var(--fondoOscuro);
-  color: var(--textoBlanco);
+  color: var(--Blanco);
   display: flex;
-  transition: var(--transition);
 }
 
-body.tema-claro {
-  --fondoOscuro: #f3f3f3;
+/* ESTILOS PARA MODO CLARO Y OSCURO*/
+body.temaClaro {
+  --fondoOscuro: #e2e2e2;
   --fondoClaro: #ffffff;
 
-  --fondoCarta: #dadada;
-  --fondoHover: #d7d7d7;
+  --fondoCarta: #bdbdbd;
+  --fondoHover: #acacac;
 
-  --fondoFormulario: #cacaca;
+  --Blanco: #000000;
+  --Gris: #444444;
 
-  --textoBlanco: #000000;
-  --textGris: #444444;
+  --fondoFormulario: #bdbdbd;
 }
 
-body.tema-claro .barraVertical-nav img {
+body.temaClaro .barraVerticalTabs img {
   filter: brightness(0) invert(0);
 }
 

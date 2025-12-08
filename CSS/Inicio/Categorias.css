@@ -3,10 +3,10 @@
   margin-bottom: 40px;
 }
 
-.categorias-titulo {
-  font-size: 1.25vw;
+.categorias h2 {
+  color: var(--Blanco);
+  font-size: 22px;
   margin-bottom: 15px;
-  color: var(--textoBlanco);
 }
 
 .filas {
@@ -26,17 +26,17 @@
 }
 
 .portadas {
-  min-width: clamp(160px, 18vw, 325px);
   background: var(--fondoCarta);
   transition: var(--transition);
+  text-align: center;
+  width: 325px;
   padding: 10px;
   border-radius: 12px;
-  text-align: center;
 }
 
 .portadas a {
+  color: var(--Blanco);
   text-decoration: none;
-  color: white;
 }
 
 .portadas:hover {
@@ -54,6 +54,26 @@
 }
 
 .portadas h3 {
-  font-size: 0.7vw;
+  font-size: 16px;
   margin-bottom: 8px;
+}
+
+@media (max-width: 1366px) {
+  .categorias h2 {
+    font-size: 18px;
+  }
+
+  .portadas {
+    width: 230px;
+    padding: 7.1px;
+  }
+
+  .portadas img {
+    width: 213.4px;
+    height: 284.4px;
+  }
+
+  .portadas h3 {
+    font-size: 14px;
+  }
 }

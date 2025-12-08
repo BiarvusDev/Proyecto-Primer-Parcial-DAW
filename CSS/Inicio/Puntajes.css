@@ -2,8 +2,8 @@
 .puntaje {
   color: white;
   font-weight: bold;
-  padding: 0.4vh 0.5vw;
-  font-size: 0.7vw;
+  padding: 4px 8px;
+  font-size: 14px;
   border-radius: 6px;
 }
 
@@ -25,4 +25,11 @@
 
 .proximo {
   background: gray;
+}
+
+@media (max-width: 1366px) {
+  .puntaje {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
 }
