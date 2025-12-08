@@ -3,7 +3,8 @@
   margin-left: var(--anchoBarraExpandida);
   width: calc(100% - var(--anchoBarraExpandida));
   transition: var(--transition);
-  padding: 50px;
+  padding-left: 50px;
+  padding-top: 50px;
 }
 
 .destacada {
@@ -11,7 +12,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 97.5%;
   height: 650px;
   padding: 50px;
   border-radius: 18px;
@@ -94,6 +95,7 @@
 @media (min-width: 2560px) {
   .destacada {
     height: 800px;
+    width: 98%;
   }
 
   .destacadaInfo {
@@ -117,11 +119,13 @@
   .contenidoPrincipal {
     margin-left: 250px;
     width: calc(100% - 250px);
-    padding: 35px;
+    padding-left: 35px;
+    padding-top: 35px;
   }
 
   .destacada {
     height: 460px;
+    width: 97%;
   }
 
   .destacadaInfo {
@@ -142,8 +146,15 @@
 }
 
 @media (max-width: 480px) {
+  .contenidoPrincipal {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+
   .destacada {
     height: 160px;
+    padding: 12px;
+    width: 97%;
   }
 
   .destacadaInfo {
@@ -151,14 +162,14 @@
   }
 
   .destacada h2 {
-    font-size: 7px;
+    font-size: 5px;
   }
 
   .destacada h3 {
-    font-size: 8px;
+    font-size: 6px;
   }
 
   .destacada p {
-    font-size: 4.5px;
+    font-size: 4px;
   }
 }

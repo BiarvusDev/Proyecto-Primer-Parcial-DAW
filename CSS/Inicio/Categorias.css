@@ -81,11 +81,17 @@
 @media (max-width: 480px) {
   .categorias h2 {
     font-size: 6px;
+    margin-bottom: 10px;
+  }
+
+  .filas {
+    gap: 8px;
+    padding-bottom: 6px;
   }
 
   .portadas {
-    width: 80px;
-    padding: 2.5px;
+    width: 50px;
+    padding: 5px;
   }
 
   .portadas img {
@@ -94,6 +100,6 @@
   }
 
   .portadas h3 {
-    font-size: 2px;
+    font-size: 10px;
   }
 }
