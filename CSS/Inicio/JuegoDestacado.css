@@ -91,7 +91,7 @@
   inset: 0;
 }
 
-@media (min-width: 2290px) {
+@media (min-width: 2560px) {
   .destacada {
     height: 800px;
   }
@@ -138,5 +138,27 @@
 
   .destacada p {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .destacada {
+    height: 160px;
+  }
+
+  .destacadaInfo {
+    width: 120px;
+  }
+
+  .destacada h2 {
+    font-size: 7px;
+  }
+
+  .destacada h3 {
+    font-size: 8px;
+  }
+
+  .destacada p {
+    font-size: 4.5px;
   }
 }

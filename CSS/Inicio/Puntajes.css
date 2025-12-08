@@ -33,3 +33,10 @@
     font-size: 12px;
   }
 }
+
+@media (max-width: 480px) {
+  .puntaje {
+    padding: 1.4px 2px;
+    font-size: 4px;
+  }
+}

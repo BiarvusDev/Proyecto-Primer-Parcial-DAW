@@ -1,7 +1,5 @@
 To do List for Website (Gamepedia)
 -----------------------------------------------------
-
-
 -Add support for mobile.
 
 -Add comments to most of the code in the project.

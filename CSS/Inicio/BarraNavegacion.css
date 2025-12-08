@@ -128,7 +128,7 @@
   width: calc(100% - var(--anchoBarraColapsada));
 }
 
-@media (min-width: 2290px) {
+@media (min-width: 2560px) {
   .barraVerticalLogo img {
     top: 18px;
     width: 54px;
@@ -183,5 +183,33 @@
   .barraVertical.colapsada .barraVerticalTabs img {
     width: 22px;
     height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .barraVertical {
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .barraVertical.abierto {
+    transform: translateX(0);
+  }
+
+  .btnAbrirMenu {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    z-index: 9999;
+    background: var(--fondoBotones);
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .btnAbrirMenu img {
+    width: 28px;
+    height: 28px;
   }
 }
