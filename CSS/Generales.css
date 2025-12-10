@@ -2,7 +2,7 @@
   --fondoOscuro: #111418;
   --fondoClaro: #1a1e23;
 
-  --fondoCarta: #1f2328;
+  --fondoPortada: #1f2328;
   --fondoHover: #292e35;
   --fondoBotones: #226ccc;
 
@@ -35,7 +35,7 @@ body.temaClaro {
   --fondoOscuro: #e2e2e2;
   --fondoClaro: #ffffff;
 
-  --fondoCarta: #bdbdbd;
+  --fondoPortada: #bdbdbd;
   --fondoHover: #acacac;
 
   --Blanco: #000000;
@@ -46,6 +46,16 @@ body.temaClaro {
 
 body.temaClaro .barraVerticalTabs img {
   filter: brightness(0) invert(0);
+}
+
+/*Dimensiones para todo contenido*/
+.contenidoPrincipal {
+  margin-left: var(--anchoBarraExpandida);
+  width: calc(100% - var(--anchoBarraExpandida));
+  transition: var(--transition);
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* PIE DE PAGINA*/

@@ -3,20 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tarjeta de Presentación</title>
+    <title>Gamepedia - Sobre Mi</title>
 
-    <!-- Google Fonts -->
+    <link rel="icon" type="imagenes/png" href="/Imagenes/GamepediaLogo.png" />
+
+    <!--Google Fonts-->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Estilo CSS -->
+    <!--Estilo CSS -->
+    <link rel="stylesheet" href="/CSS/Generales.css" />
+    <link rel="stylesheet" href="/CSS/BarraNavegacion.css" />
+    <link rel="stylesheet" href="/CSS/Inicio/Botones.css" />
     <link rel="stylesheet" href="/CSS/SobreMi/EstiloSM.css" />
   </head>
 
   <body>
-    <main>
+      <body>
+    <!--Barra de Navegacion Vertical-->
+    <aside class="barraVertical">
+      <div class="barraVerticalLogo">
+        <h1><img src="/Imagenes/GamepediaLogo.png" /><span>Gamepedia</span></h1>
+      </div>
+      <hr />
+
+      <!--Contenido de la barra de navegacion-->
+      <nav class="barraVerticalTabs">
+        <ul>
+          <li>
+            <a href="#"><img src="/Iconos/search.svg" /><span>Buscar</span></a>
+          </li>
+
+          <li>
+            <a href="/Index.html"
+              ><img src="/Iconos/home.svg" /><span>Inicio</span></a
+            >
+          </li>
+
+          <li>
+            <a href="/Reseñas.html"
+              ><img src="/Iconos/review.svg" /><span>Reseñas</span></a
+            >
+          </li>
+
+          <li>
+            <a href="/MiLista.html"
+              ><img src="/Iconos/checklist.svg" /><span>Mi Lista</span></a
+            >
+          </li>
+
+          <li>
+            <a href="/SobreMi.html"
+              ><img src="/Iconos/more.svg" /><span>Sobre Mi</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <!--Boton de cambiar modo oscuro / claro-->
+      <div class="barraVerticalFooter">
+        <button class="btnTema" aria-label="Cambiar Tema">
+          <img src="/Iconos/oscuro.svg" class="btnIcono" />
+        </button>
+
+        <!--Minimizar la barra de navegacion-->
+        <button
+          class="btnMinimizar"
+          aria-label="Minimizar Barra"
+          aria-expanded="true"
+        >
+          <img src="/Iconos/minimizar.svg" class="btnIcono" />
+        </button>
+
+        <!--Boton de iniciar sesion-->
+        <button class="btnSesion">
+          <span class="text-completo">Registar o Iniciar Sesión</span
+          ><span class="text-mini"
+            ><img src="Iconos/usuario.svg" class="btnIcono"
+          /></span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="contenidoPrincipal">
       <div class="container">
         <div class="card">
           <img
@@ -66,14 +137,15 @@
             target="_blank"
             rel="noopener noreferrer"
           >
-            Redes
+            Curriculum Digital
           </a>
         </div>
       </div>
     </main>
 
-    <footer class="footer">
-      <p>&copy; Todo los derechos reservado para Chris Molina.</p>
-    </footer>
+
   </body>
+
+  <script src="/JavaScript/MenuColapsable.js"></script>
+  <script src="/JavaScript/CambiarTema.js"></script>
 </html>

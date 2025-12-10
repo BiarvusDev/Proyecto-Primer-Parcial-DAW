@@ -21,12 +21,12 @@
 }
 
 .filas::-webkit-scrollbar-thumb {
-  background: var(--fondoCarta);
+  background: var(--fondoPortada);
   border-radius: 5px;
 }
 
 .portadas {
-  background: var(--fondoCarta);
+  background: var(--fondoPortada);
   transition: var(--transition);
   text-align: center;
   width: 325px;

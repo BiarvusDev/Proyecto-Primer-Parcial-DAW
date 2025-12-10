@@ -1,0 +1,88 @@
+.contenidoER {
+  display: flex;
+  padding-right: 50px;
+  gap: 25px;
+}
+
+.portadaER {
+  background-color: var(--fondoPortada);
+  text-align: center;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.portadaER img {
+  width: 550px;
+  height: 750px;
+  border-radius: 8px;
+}
+
+.portadaER hr {
+  border: transparent;
+  margin: 6px;
+}
+
+.portadaER span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.portadaER a {
+  text-decoration: none;
+  color: var(--textoBlanco);
+}
+
+.portadaER .logoSteam {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 6px;
+  top: 5px;
+}
+
+.portadaER .logoXbox {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 6px;
+  top: 5px;
+}
+
+.portadaER .logoPS {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  margin-right: 6px;
+  top: 5px;
+}
+
+.portadaER .logoGOTY {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+  top: 3px;
+}
+
+/*.videoER {
+  width: 1150px;
+}*/
+
+.infoER p {
+  text-align: justify;
+  font-size: 24px;
+}
+
+.infoER hr {
+  border: transparent;
+  margin: 10px;
+}
+
+@media (min-width: 2560px) {
+  .contenidoER {
+    zoom: 1.38;
+  }
+}

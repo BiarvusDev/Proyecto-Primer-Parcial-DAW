@@ -1,0 +1,21 @@
+Lista de tareas para un sitio web (Gamepedia)
+------------------------------------------------------
+- Formulario responsivo
+
+- Hacer que el sitio web recuerde el estado de la barra de navegacion al cambiar de pagina (mejorara la animación de la barra de navegacion).
+
+- Mejorar el pie de pagina de la barra nav (cuando la ventana es muy pequeña, no se ven los tabs). Posible solución:
+Mantenerlo recortado y agregar un scroll a las pestañas de la barra de navegacion si es que la ventana se vuelve muy pequeña. (Sitio web de IGN como referencia).
+
+- Agregar comentarios a la mayor parte del codigo del proyecto.
+
+-------------------------------------------------------------------
+
+- ​​Agregar una pagina más: Crear una lista.
+
+- Pagina Mi Lista:
+Sección para crear una lista de juegos para llevar un registro de los juegos jugados.
+Incluye una búsqueda que se actualiza en tiempo real (busca cuando hay caracteres en la busqueda).
+Los juegos tienen un signo + (más) al pasar el cursor sobre ellos, que se puede pulsar para agregar un juego a la lista.
+La lista tiene un signo - (menos) para eliminar un juego de la lista.
+Los juegos que estan en la lista se le puede poner un visto, indicando que ya lo completamos.

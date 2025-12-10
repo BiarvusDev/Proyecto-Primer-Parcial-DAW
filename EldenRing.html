@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elden-Ring</title>
+    <title>Gamepedia - Elden Ring</title>
+
+    <link rel="icon" type="imagenes/png" href="/Imagenes/GamepediaLogo.png" />
 
     <!--Google Fonts-->
     <link
@@ -12,16 +14,17 @@
     />
 
     <!--Estilos CSS-->
-    <link rel="stylesheet" href="/CSS/Inicio/Generales.css" />
-    <link rel="stylesheet" href="/CSS/Inicio/BarraNavegacion.css" />
+    <link rel="stylesheet" href="/CSS/Generales.css" />
+    <link rel="stylesheet" href="/CSS/BarraNavegacion.css" />
     <link rel="stylesheet" href="/CSS/Inicio/Botones.css" />
+    <link rel="stylesheet" href="CSS/Elden Ring/EstilosER.css" />
   </head>
 
   <body>
     <!--Barra de Navegacion Vertical-->
     <aside class="barraVertical">
       <div class="barraVerticalLogo">
-        <h1><img src="/Imagenes/Logo.png" /><span>Gamepedia</span></h1>
+        <h1><img src="/Imagenes/GamepediaLogo.png" /><span>Gamepedia</span></h1>
       </div>
       <hr />
 
@@ -29,40 +32,30 @@
       <nav class="barraVerticalTabs">
         <ul>
           <li>
-            <a href="#"
-              ><img src="/Iconos/search.svg" /><span class="label"
-                >Buscar</span
-              ></a
-            >
+            <a href="#"><img src="/Iconos/search.svg" /><span>Buscar</span></a>
           </li>
+
           <li>
             <a href="/Index.html"
-              ><img src="/Iconos/home.svg" /><span class="label"
-                >Inicio</span
-              ></a
+              ><img src="/Iconos/home.svg" /><span>Inicio</span></a
             >
           </li>
+
           <li>
-            <a href="/Reviews.html"
-              ><img src="/Iconos/review.svg" /><span class="label"
-                >Reseñas</span
-              ></a
+            <a href="/Reseñas.html"
+              ><img src="/Iconos/review.svg" /><span>Reseñas</span></a
             >
           </li>
 
           <li>
             <a href="/MiLista.html"
-              ><img src="/Iconos/checklist.svg" /><span class="label"
-                >Mi Lista</span
-              ></a
+              ><img src="/Iconos/checklist.svg" /><span>Mi Lista</span></a
             >
           </li>
 
           <li>
             <a href="/SobreMi.html"
-              ><img src="/Iconos/more.svg" /><span class="label"
-                >Sobre Mi</span
-              ></a
+              ><img src="/Iconos/more.svg" /><span>Sobre Mi</span></a
             >
           </li>
         </ul>
@@ -71,7 +64,7 @@
       <!--Boton de cambiar modo oscuro / claro-->
       <div class="barraVerticalFooter">
         <button class="btnTema" aria-label="Cambiar Tema">
-          <img src="/Iconos/oscuro.svg" />
+          <img src="/Iconos/oscuro.svg" class="btnIcono" />
         </button>
 
         <!--Minimizar la barra de navegacion-->
@@ -80,44 +73,95 @@
           aria-label="Minimizar Barra"
           aria-expanded="true"
         >
-          <img src="/Iconos/minimizar.svg" />
+          <img src="/Iconos/minimizar.svg" class="btnIcono" />
         </button>
 
         <!--Boton de iniciar sesion-->
         <button class="btnSesion">
           <span class="text-completo">Registar o Iniciar Sesión</span
-          ><span class="text-mini"><img src="Iconos/usuario.svg" /></span>
+          ><span class="text-mini"
+            ><img src="Iconos/usuario.svg" class="btnIcono"
+          /></span>
         </button>
       </div>
     </aside>
 
-    <section>
-      <main>
-        <p style="text-align: justify">
-          Elden Ring es un juego de rol de acción de 2022 desarrollado por
-          FromSoftware y publicado por Bandai Namco Entertainment. Fue dirigido
-          por Hidetaka Miyazaki, con la creación del mundo a cargo del escritor
-          de fantasía estadounidense George R. R. Martin. Se lanzó por primera
-          vez el 25 de febrero de 2022 para PlayStation 4, PlayStation 5,
-          Windows, Xbox One y Xbox Series X/S. Ambientado en las Tierras
-          Intermedias, los jugadores controlan un personaje personalizable en
-          una misión para reparar el Anillo de Elden y convertirse en el nuevo
-          Señor de Elden. Elden Ring se presenta en tercera persona, con
-          jugadores que recorren libremente su mundo abierto. Las seis áreas
-          principales se pueden recorrer usando la montura del personaje. Se
-          pueden explorar mazmorras lineales y ocultas para encontrar objetos
-          útiles. Los jugadores se enfrentan a los enemigos usando diversas
-          armas y hechizos mágicos, y pueden centrarse en el combate indirecto
-          gracias a las mecánicas de sigilo. A lo largo del mundo del juego, los
-          puntos de control permiten viajar rápidamente y permiten a los
-          jugadores mejorar sus atributos usando runas, una moneda del juego.
-          Elden Ring cuenta con un modo multijugador en línea en el que los
-          jugadores se unen a través del juego cooperativo para luchar contra
-          jefes o participar en combates jugador contra jugador.
-        </p>
-        <img src="/Imagenes/EldenRing.jpg" />
-      </main>
-    </section>
+    <main class="contenidoPrincipal">
+      <section class="contenidoER">
+        <article class="portadaER">
+          <img
+            src="/Imagenes/EldenRing.jpg"
+            class="imagenER"
+            alt="Elden Ring Cover"
+          />
+          <span
+            >Disponible en:
+            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/"
+              ><img src="/Iconos/steam.svg" class="logoSteam" />Steam</a
+            >,
+            <a href="https://www.xbox.com/en-US/games/elden-ring"
+              ><img src="/Iconos/xbox.svg" class="logoXbox" />Xbox</a
+            >,
+            <a href="https://www.playstation.com/es-ec/games/elden-ring/"
+              ><img
+                src="/Iconos/playstation.svg"
+                class="logoPS"
+              />PlayStation</a
+            >
+          </span>
+          <hr />
+          <span
+            >(<img src="/Iconos/goty.webp" class="logoGOTY" />GOTY) Ganador
+            Juego del Año 2022</span
+          >
+        </article>
+
+        <div class="infoER">
+          <!--<video class="videoER" controls muted loop>
+            <source src="/CSS/Elden Ring/GameplayER.mp4" type="video/mp4" />
+          </video>-->
+          <p>
+            Elden Ring es un juego de rol de acción de 2022 desarrollado por
+            FromSoftware y publicado por Bandai Namco Entertainment. Fue
+            dirigido por Hidetaka Miyazaki, con la creación del mundo a cargo
+            del escritor de fantasía estadounidense George R. R. Martin. Se
+            lanzó por primera vez el 25 de febrero de 2022 para PlayStation 4,
+            PlayStation 5, Windows, Xbox One y Xbox Series X/S.
+          </p>
+          <hr />
+          <p>
+            Ambientado en las Tierras Intermedias, los jugadores controlan un
+            personaje personalizable en una misión para reparar el Anillo de
+            Elden y convertirse en el nuevo Señor de Elden. Elden Ring se
+            presenta en tercera persona, con jugadores que recorren libremente
+            su mundo abierto. Las seis áreas principales se pueden recorrer
+            usando la montura del personaje. Se pueden explorar mazmorras
+            lineales y ocultas para encontrar objetos útiles. Los jugadores se
+            enfrentan a los enemigos usando diversas armas y hechizos mágicos, y
+            pueden centrarse en el combate indirecto gracias a las mecánicas de
+            sigilo. A lo largo del mundo del juego, los puntos de control
+            permiten viajar rápidamente y permiten a los jugadores mejorar sus
+            atributos usando runas, una moneda del juego.
+          </p>
+          <hr />
+          <p>
+            Elden Ring cuenta con un modo multijugador en línea en el que los
+            jugadores se unen a través del juego cooperativo para luchar contra
+            jefes o participar en combates jugador contra jugador.
+          </p>
+          <hr />
+          <p>
+            Recibió múltiples premios a juego del año, tales como el de los Game
+            Awards de 2022, y alcanzó las 20 millones de unidades vendidas en su
+            primer año. En junio de 2024, se publicó el contenido descargable
+            Shadow of the Erdtree, el cual recibió elogios similares de la
+            crítica, vendiendo más de 5 millones de unidades. Un spin-off
+            multijugador titulado Elden Ring Nightreign se publicó el 30 de mayo
+            de 2025.
+          </p>
+        </div>
+      </section>
+    </main>
   </body>
 
   <script src="/JavaScript/MenuColapsable.js"></script>

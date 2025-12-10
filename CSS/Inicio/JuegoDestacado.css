@@ -1,12 +1,4 @@
 /* SECCION DE JUEGO DESTACADO (E33) */
-.contenidoPrincipal {
-  margin-left: var(--anchoBarraExpandida);
-  width: calc(100% - var(--anchoBarraExpandida));
-  transition: var(--transition);
-  padding-left: 50px;
-  padding-top: 50px;
-}
-
 .destacada {
   position: relative;
   overflow: hidden;
